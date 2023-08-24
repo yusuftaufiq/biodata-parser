@@ -1,0 +1,3 @@
+export const LOWERCASE_SPECIAL_CHARACTERS = ['of'];
+
+export const UPPERCASE_SPECIAL_CHARACTERS = ['CSS', 'PHP', 'GO'];
