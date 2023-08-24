@@ -1,8 +1,29 @@
 version: '3'
 services:
+  install:
+    image: node:alpine
+    working_dir: /app
+    volumes:
+      - .:/app
+    command: sh -c "npm install"
+
   start:
     image: node:alpine
     working_dir: /app
     volumes:
       - .:/app
-    command: sh -c "npm install && npm run start"
+    command: sh -c "npm run start"
+
+  test:
+    image: node:alpine
+    working_dir: /app
+    volumes:
+      - .:/app
+    command: sh -c "npm run test"
+
+  cov:
+    image: node:alpine
+    working_dir: /app
+    volumes:
+      - .:/app
+    command: sh -c "npm run test:cov"

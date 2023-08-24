@@ -32,7 +32,11 @@ Please visit https://replit.com/@yt2951/biodata-parser and press the "▶" icon 
 - Requirements: Docker
 - Clone this repository with `git clone https://github.com/yusuftaufiq/biodata-parser.git`
 - Change the active directory to `biodata-parser`
-- Run start service from `docker-compose.yml` with `docker-compose run --rm start`
+- Install dependencies with `docker-compose run --rm install`
+- Run the CLI application with `docker-compose run --rm start`
+- Additionally, you can run the following commands:
+  - `docker-compose run --rm test`: run unit tests with Jest
+  - `docker-compose run --rm cov`: run unit tests code coverage calculation
 
 ### Manual Installation
 
@@ -44,6 +48,8 @@ Please visit https://replit.com/@yt2951/biodata-parser and press the "▶" icon 
 - Additionally, you can run the following commands:
   - `npm run format`: run code formatter with Prettier
   - `npm run lint`: run code linter with ESLint
+  - `npm run test`: run unit tests with Jest
+  - `npm run test:cov`: run unit tests code coverage calculation
 
 ## Constraint
 
