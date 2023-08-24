@@ -29,7 +29,7 @@ const main = () => {
       upperCaseSpecialCharacters: UPPERCASE_SPECIAL_CHARACTERS,
     }),
     alignSemiColonToMiddle,
-    wordWrapValueAfterSemiColon,
+    wordWrapValueAfterSemiColon(process.stdout.columns),
   );
 
   const output = BIO_DATA_CONSTANT.split('\n').map(pipelines).join('\n');
