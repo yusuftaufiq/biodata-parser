@@ -10,6 +10,10 @@ const PIPELINES = pipe(
   wordWrapValueAfterSemiColon,
 );
 
+/**
+ * The application's main entry point, all the executable
+ * code is organized in the following function
+ */
 const main = () => {
   const output = BIO_DATA_CONSTANT.split('\n').map(PIPELINES).join('\n');
 
