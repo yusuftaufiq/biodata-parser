@@ -40,11 +40,12 @@ Please visit https://replit.com/@yt2951/biodata-parser and press the "▶" icon 
 - Clone this repository with `git clone https://github.com/yusuftaufiq/biodata-parser.git`
 - Change the active directory to `biodata-parser`
 - Install dependencies with `npm install`
-- Run CLI applications with `npm run start`
+- Run the CLI application with `npm run start`
 - Additionally, you can run the following commands:
   - `npm run format`: run code formatter with Prettier
   - `npm run lint`: run code linter with ESLint
 
 ## Constraint
 
-Do not resize your terminal or window while running the application because this application uses word wrap based on the size of your window
+- Do not resize your terminal or window while running the application because this application uses word wrap based on the size of your window
+- The width of the terminal window when running the application cannot be small and should be 35 columns or wider
