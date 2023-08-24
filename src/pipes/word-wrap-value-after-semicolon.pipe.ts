@@ -8,7 +8,7 @@ export const wordWrapValueAfterSemiColon: ParserPipe = (words: string) => {
   const splitByFirstSemiColonRegexp = new RegExp(/:(.*)/s);
   const [key, value] = words.split(splitByFirstSemiColonRegexp);
   const splitEveryNthCharactersRegexp = new RegExp(
-    `.{1,${process.stdout.columns - 1 - key.length}}`,
+    `.{1,${process.stdout.columns - 2 - key.length}}`,
     'g',
   );
   const splittedValues = value.match(splitEveryNthCharactersRegexp);
